@@ -1,0 +1,20 @@
+<h2> < {{node.tag}} > </h2>
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="attr in node.attrs ">
+        <td>{{attr.name}}</td>
+        <td>
+        	<a href="#" editable-text="attr.value">{{ attr.value || "empty" }}</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
