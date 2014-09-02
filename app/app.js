@@ -8,17 +8,17 @@
  *
  * Main module of the application.
  */
-var app = angular
-  .module('testAppApp', [
+var app = angular.module('testAppApp', [
     'ngResource','treeControl','xeditable'
-  ])
-  .run(function(editableOptions) {
+  ]).run(function(editableOptions) {
     editableOptions.theme = 'bs3';
   })
-  .factory('TreeData', ['$resource', function($resource) { 
+
+app.factory('TreeData', ['$resource', function($resource) { 
     return $resource('data.json')
   }])
-  .factory('Mediator',function($rootScope, TreeData, $http) {
+
+app.Factory('Mediator',function($rootScope, TreeData, $http) {
   	var mediator = {};
 
   	mediator.arg = null;
