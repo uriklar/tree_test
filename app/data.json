@@ -47,6 +47,62 @@
               "visible": "true"
             }
         ]
+      },
+      { 
+        "tag" : "span",
+        "attrs": [ 
+            { "name" : "class", "value" : "container" }, 
+            { "name": "id", "value" : "container" },
+            { "name" : "xpath" , "value" : "/body[1]/span[1]"}
+        ],
+        "type": "container",
+        "visible": "true",
+        "children" : [
+            { 
+              "tag" : "img", 
+              "attrs": [ 
+                { "name" : "src", "value" : "http://sheldonbrown.com/images/scb_eagle_contact.jpeg" },
+                { "name" : "xpath" , "value" : "/body[1]/div[1]/img[1]"}
+              ],
+              "type": "image",
+              "visible": "true"
+            },
+            {  
+              "tag" : "img", 
+              "attrs": [ 
+                { "name" : "class", "value" : "title" },
+                { "name" : "xpath" , "value" : "/body[1]/div[1]/h1[1]"}
+              ],
+              "type": "image",
+              "visible": "true"
+            },
+            {  
+              "tag" : "container", 
+              "attrs": [ { "name" : "class", "value" : "subtitle" },{ "name" : "xpath" , "value" : "/body[1]/div[1]/h3[1]"} ],
+              "type": "heading",
+              "visible": "true",
+              "children" : [
+                {  
+                  "tag" : "button", 
+                  "attrs": [ { "name" : "type", "value" : "submit" },{ "name" : "xpath" , "value" : "/body[1]/div[1]/button[1]"} ],
+                  "type": "button",
+                  "visible": "true"
+                },
+                {  
+                  "tag" : "button", 
+                  "attrs": [ { "name" : "type", "value" : "submit" },{ "name" : "xpath" , "value" : "/body[1]/div[1]/button[1]"} ],
+                  "type": "button",
+                  "visible": "true"
+                }
+              ]
+            },
+            {  
+              "tag" : "button", 
+              "attrs": [ { "name" : "type", "value" : "submit" },{ "name" : "xpath" , "value" : "/body[1]/div[1]/button[1]"} ],
+              "type": "button",
+              "visible": "true"
+            }
+        ]
       }
     ]
   }
