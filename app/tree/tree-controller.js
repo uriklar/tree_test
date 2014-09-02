@@ -1,4 +1,4 @@
-function TreeCtrl($scope,$rootScope, Mediator) {
+var TreeCtrl = function($scope,$rootScope,Mediator) {
   // Data is passed in by the Mediator
   $scope.treeData = Mediator.treeData;
 

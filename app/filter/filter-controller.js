@@ -1,4 +1,4 @@
-function FilterCtrl($scope,Mediator) {
+var FilterCtrl = function($scope,Mediator) {
   $scope.types = Mediator.nodeTypes;
   $scope.selection = [];
   $scope.toggleSelection = function toggleSelection(typeName) {
