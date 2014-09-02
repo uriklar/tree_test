@@ -18,7 +18,7 @@ app.factory('TreeData', ['$resource', function($resource) {
     return $resource('data.json')
   }])
 
-app.Factory('Mediator',function($rootScope, TreeData, $http) {
+app.factory('Mediator',['$rootScope','TreeData','$http',function($rootScope, TreeData, $http) {
   	var mediator = {};
 
   	mediator.arg = null;
@@ -33,4 +33,4 @@ app.Factory('Mediator',function($rootScope, TreeData, $http) {
     mediator.nodeTypes = ["container","image","heading","button"];
 
   	return mediator;
-  });
+  }]);
